@@ -1,0 +1,14 @@
+name: Q&A
+
+on:
+    pull_request_target:
+
+defaults:
+    run:
+        shell: bash
+
+jobs:
+    call-qa:
+        uses: specter-global/symfony-recipes/.github/workflows/callable-qa.yaml@main
+        secrets:
+            token: ${{ secrets.BOT_TOKEN }}

@@ -1,0 +1,8 @@
+{
+    "bundles": {
+        "SpecterGlobal\\Bundle\\TagManagerBundle\\SpecterGlobalTagManagerBundle": ["all"]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    }
+}

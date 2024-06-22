@@ -1,0 +1,5 @@
+  * You're ready to use SpecterGlobal\TagManagerBundle
+
+  * TagManagerBundle has been configured in your <comment>specter_global_tag_manager.yaml</> file
+
+  * <fg=blue>Read</> the documentation at <comment>https://developer.specter.global/docs/tag-manager-bundle</>
