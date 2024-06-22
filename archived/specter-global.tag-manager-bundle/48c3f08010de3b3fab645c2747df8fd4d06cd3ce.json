@@ -1,0 +1,55 @@
+{
+    "manifests": {
+        "specter-global/tag-manager-bundle": {
+            "manifest": {
+                "bundles": {
+                    "SpecterGlobal\\Bundle\\TagManagerBundle\\SpecterGlobalTagManagerBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "post-install-output": [
+                    "  * You're ready to use SpecterGlobal\\TagManagerBundle",
+                    "",
+                    "  * TagManagerBundle has been configured in your <comment>specter_global_tag_manager.yaml</> file",
+                    "",
+                    "  * <fg=blue>Read</> the documentation at <comment>https://developer.specter.global/docs/tag-manager-bundle</>"
+                ]
+            },
+            "files": {
+                "config/packages/specter_global_tag_manager.yaml": {
+                    "contents": [
+                        "specter_global_tag_manager:",
+                        "    enabled: true",
+                        "    tag_id: 'DUMMY_TAG_MANAGER_ID'",
+                        "    cookie_flags:",
+                        "        - 'Flag=Value'",
+                        "    linker:",
+                        "        accept_incoming: false",
+                        "        decorate_forms: false",
+                        "        url_position: query",
+                        "        domains:",
+                        "            - 'example.org'",
+                        "",
+                        "when@dev:",
+                        "    specter_global_tag_manager:",
+                        "        enabled: false",
+                        "",
+                        "when@test:",
+                        "    specter_global_tag_manager:",
+                        "        enabled: false",
+                        "",
+                        "when@prod:",
+                        "    specter_global_tag_manager:",
+                        "        enabled: true",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "48c3f08010de3b3fab645c2747df8fd4d06cd3ce"
+        }
+    }
+}

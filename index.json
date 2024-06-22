@@ -1,0 +1,26 @@
+{
+    "aliases": [],
+    "recipes": {
+        "specter-global/tag-manager-bundle": [
+            "1.0"
+        ]
+    },
+    "recipe-conflicts": [],
+    "versions": {
+        "splits": {
+            "specter-global/tag-manager-bundle": [
+                "1.0"
+            ]
+        }
+    },
+    "branch": "main",
+    "is_contrib": false,
+    "_links": {
+        "repository": "github.com/specter-global/symfony-recipes",
+        "origin_template": "{package}:{version}@github.com/specter-global/symfony-recipes:main",
+        "recipe_template": "https://raw.githubusercontent.com/specter-global/symfony-recipes/flex/main/{package_dotted}.{version}.json",
+        "recipe_template_relative": "{package_dotted}.{version}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/specter-global/symfony-recipes/flex/main/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
+    }
+}
